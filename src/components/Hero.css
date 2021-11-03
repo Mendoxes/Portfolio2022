@@ -1,0 +1,315 @@
+.show{position: absolute;
+width: 90%;
+margin-left: -45%;
+top: 31%;
+left: 50%;
+z-index: 1;
+font-family: 'Zen Kurenaido', sans-serif;
+font-size: 4rem;
+font-weight: 700;
+line-height: 1;
+text-align: center;
+-webkit-transform: translate(0,-20px);
+-moz-transform: translate(0,-20px);
+-ms-transform: translate(0,-20px);
+-o-transform: translate(0,-20px);
+transform: translate(0,-20px);
+-webkit-transition: -webkit-transform 1s ease-out;
+-moz-transition: -moz-transform 1s ease-out;
+-o-transition: -o-transform 1s ease-out;
+
+letter-spacing: 0.2rem;
+/* background-color: black; */
+
+animation-fill-mode: forwards;
+
+}
+
+.c1{ 
+    animation: example 3s;
+}
+.c2{ 
+    animation: example 2s;
+}
+.c3{ 
+    animation: example 3s;
+}
+.c4{ 
+    animation: example 4.5s;
+}
+.c5{ 
+    animation: example 1.5s;
+}
+.c6{ 
+    animation: example 2.5s;
+}
+.c7{ 
+    animation: example 3.5s;
+}
+.c8{ 
+    animation: example 2s;
+}
+.c9{ 
+    margin-right:2rem;
+    animation: example 3s;
+}
+.c10{ 
+    animation: example 4s;
+}
+.c11{ 
+    animation: example 5s;
+}
+
+.c12{ 
+    animation: example 4s;
+}
+
+.c13{ 
+    animation: example 1s;
+}
+
+
+.c14{ 
+    animation: example 6s;
+    font-size:1rem;
+}
+
+.img2{
+    width: 2rem;
+    background-color: transparent;
+    animation: transle 2s;
+    animation-iteration-count: infinite;
+    cursor:pointer;
+}
+
+.scrolling{
+    width: 3rem;
+    background-color: transparent;
+
+position: relative;
+   
+   
+    padding: 10px;
+  top:20%;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 0.2em;
+    z-index: 6;
+    color:white;
+    
+}
+
+#stage{
+   
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    color:#cbcbcb;
+
+}
+
+.nvv{
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    /* transition: all 1s; */
+    filter:saturate(10%);
+    animation: example3 5s;
+    animation-fill-mode: forwards;
+}
+
+
+
+.nvv2{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 5;
+    height: 100vh;
+    width: 100%;
+    transition: all 1s;
+    opacity:0;
+ 
+}
+@keyframes example {
+0% {opacity:0}
+50%{opacity:0}
+    100% {opacity:1}
+  }
+
+  @keyframes example2 {
+    0% { transform: scale(20);}
+    50%{ transform: scale(20);}
+        100% { transform: scale(120);}
+      }
+
+
+      @keyframes example3 {
+        0% { filter:saturate(0%);}
+        
+            100% { filter:saturate(200%);}
+          }
+
+
+          .section1{
+              height: 100vh;
+              position:relative;
+          }
+
+
+          @keyframes transle {
+
+            0%{transform: translate(0px,0px)
+            }
+            50%{transform: translate(0px, 10px)}
+            100%{transform: translate(0px,0px)}
+          }
+
+
+          .first{
+
+            width: 100%;
+            height: 100vh;
+            margin-top:-7px;
+            /* padding: 2rem;
+            margin:3rem; */
+            position: relative;
+       
+            background-size: cover;
+            filter:saturate(10%);
+            display:flex;
+            transition: filter 6s, opacity 1s, background-image 0.5s;
+         
+
+            /* animation: example3 10s;  */
+            /* transition: all 2s; */
+          
+            animation-fill-mode: forwards;
+          }
+
+
+
+
+          .second{
+
+            width: 100%;
+            height: 100vh;
+            
+            /* padding: 2rem;
+            margin:3rem; */
+            position: relative;
+            background-image: url("../foodi.jpg");
+            background-size: cover;
+            filter:saturate(0%);
+            display:flex;
+            animation: opa 2s, example3 4s;
+            opacity:0;
+            animation-fill-mode: forwards;
+            
+          }
+
+
+
+          .third{
+
+            width: 100%;
+            height: 100vh;
+            
+            /* padding: 2rem;
+            margin:3rem; */
+            position: relative;
+            background-image: url("../9.png");
+            background-size: cover;
+            filter:saturate(100%);
+            display:flex;
+            animation: opa 1s;
+            opacity:0;
+            animation-fill-mode: forwards;
+          }
+
+    
+
+          .first_img{
+            
+            top:0%;
+            margin:20rem -1rem;
+          filter:saturate(100%) !important;
+          width: 30%;
+          height: 30vh;
+          transition: all 1s;
+          position: absolute;
+          box-shadow: none;
+          border-radius: 2rem;
+          }
+          .imgIcons{
+
+            width:13%;
+            margin-left: 1.3rem;
+          }
+
+
+          .h3{
+            margin:2% 10%;
+            color:white;
+            width:50%;
+            background-color: #000000bf;
+    height: 30vh
+;
+
+        }
+
+
+.h2{
+    margin:2% 10%;
+    color:white;
+    width:50%;
+}
+          
+          .second_img{
+            top:0%;
+            margin:20rem -40%;
+          filter:saturate(100%) !important;
+          width: 30%;
+          height: 30vh;
+          transition: all 1s;
+          position: absolute;
+          box-shadow: none;
+          border-radius: 2rem;
+         
+        }
+
+
+          
+
+          .first_img:hover{
+            width: 50%;
+            height: 50vh;
+           
+            border-radius: 3rem;
+          }
+
+
+
+          .second_img:hover{
+            width: 50%;
+            height: 50vh;
+           border-radius: 3rem;
+          }
+
+          .main_img{
+
+           
+          }
+
+          @keyframes opa {
+              0%{
+                  opacity:0;
+              }
+              100%{
+                  opacity:1;
+              }
+          }
