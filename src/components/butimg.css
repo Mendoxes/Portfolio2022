@@ -105,3 +105,21 @@ img {
 .pad{padding:2rem;
     object-fit: cover;}
 .pad2{padding:2rem}
+
+
+@media only screen and (max-width: 900px) {
+    .Plus > a, .Plus > div  {
+        margin: 20px 40px 39px 76px;
+            flex: 0 0 auto;
+            width: 27%;
+    }
+  }
+
+
+  @media only screen and (max-width: 500px) {
+    .Plus > a, .Plus > div  {
+        margin: 86px  39px 37px 33%;
+            flex: 0 0 auto;
+            width: 38%;
+    }
+  }
