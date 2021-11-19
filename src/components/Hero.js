@@ -4,7 +4,11 @@ import img1 from "../hero.jpg"
 import tap from "../tap.png"
 import tests from "../9.png"
 import tests2 from "../8.png"
-import foodi from "../foodi.jpg"
+import raz from "../6.png"
+import inst from "../7.png"
+import foodi from "../foodi.png"
+import hero2 from "../hero2.jpg"
+import razerB from "../razerB.png"
 import github from "../github.png"
 import Fade from 'react-reveal/Fade';
 import reactIcon from "../react.png"
@@ -12,79 +16,26 @@ import bootstrapIcon from "../bootstrap.png"
 import htmlIcon from "../html.png"
 import cssIcon from "../css.png"
 import javaScriptIcon from "../javascript.png"
-import hero2 from "../hero2.jpg"
-import Background from "../mount.jpg"
+import templet1 from "../templet1.jpg"
+import smile from "../smile.png"
+import Background from "../mount.png"
+import Butimg from "../components/butimg.js"
+
+
+import SectionP from "./SectionP"
 
 import {useState} from "react"
 import { Link } from 'react-scroll';
 
 export default function Hero() {
-    const [state,setState]=useState(0)
-    const [oks,setOks]=useState(1)
-    const [imgChange, setImgChange]=useState(hero2)
-const [sat, setSatu]=useState(0.1)
-
-const [uno, setUno]=useState(1)
-const [due,setDue]=useState(1)
-const [posi,setPosi]=useState("inherit")
-const [oks2,setOks2]=useState(0)
-const [oks1,setOks1]=useState(0)
+   
 
 
 
-    let sectionStyle ={
-opacity: oks,
-        backgroundImage: `url(${imgChange})`,
-        WebkitFilter: `saturate(${sat})`
-    }
+
 
   
- 
-
-
-    function imgFunk(){
-        setTimeout(() => { 
-        setOks(1)
-        setOks1(1)
-        setImgChange(foodi)
-        setSatu(1)
-        setDue(0)
-    }, 500);
-    }
-
-    function imgFunk2(){
-    
-        // setOks(0)
-        setTimeout(() => {
-        setSatu(0.01)
-        setImgChange(hero2)
-        setDue(1)
-        setPosi("inherit")
-        setOks1(0)   }, 500);
-    }
-
-
-    
-    function imgFunk3(){
-        setTimeout(() => {
-        setImgChange(Background)
-        setOks(1)
-        setOks2(1)
-        setSatu(1)
-        setUno(0)}, 500);
-    }
-
-    function imgFunk4(){
-
-        setTimeout(() => {
-            setUno(1)
-            // setOks(0)
-            setSatu(0.01)
-            setOks2(0)
-            setImgChange(hero2)   
-        }, 500);
-
-    }
+ let specialC = "special";
 
 
    
@@ -108,6 +59,11 @@ opacity: oks,
       
       console.log([...pentagon.getSides()]);
 
+      const title1 = ["Climate change","Dish Search App","Instagram Clone","Razer Shop"] //data for titles 
+      const explenation =["•	Website based on NASA Climat-change information, I’m using API from various endpoints to show the worldwide temperature change over 130years, or air quality over 170 countries.","•	Website based on NASA Climat-change information, I’m using API from various endpoints to show the worldwide temperature change over 130years, or air quality over 170 countries. ","fjdksf", "fdhsfs"]
+
+
+
 
     return (
         <div >
@@ -130,53 +86,30 @@ opacity: oks,
                 <span className="c12" style={{transitionDelay: 666+"ms"}}>W</span>
                 <span className="c13" style={{transitionDelay: 500+"ms"}}>Y</span>
                 <p className="c14">I'm aspiring junior web developer, lets start scrolling!</p>
-                <Link className="scrolling" activeClass="active" to="section1" spy={true} smooth={true} duration={1000}>
+                {/* <Link className="scrolling" activeClass="active" to="section1" spy={true} smooth={true} duration={1000}>
          <img className="img2" src={tap}></img>
-        </Link>
+        </Link> */}
+        <Butimg></Butimg>
                 {/* <button onClick={ok}>okokoo</button> */}
             </div>
            
             </div>
-            <div id="section1" className="section1">
            
 
 
-
-<Fade><div className="first" style={ sectionStyle} >
-    
-<div  className="h2" style={{opacity:oks2}}>
-    <h2  style={{color:"white"}}> Dish search app</h2>
-<p>•	Website based on NASA Climat-change information, I’m using API from various endpoints to show the worldwide temperature change over 130years, or air quality over 170 countries. </p>
-<div style={{width:" 70%"}}> <img src={reactIcon} className="imgIcons"></img> <img className="imgIcons" src={javaScriptIcon}></img>  
-<img className="imgIcons" src={bootstrapIcon}></img>  <img className="imgIcons" src={htmlIcon}></img> 
- <img className="imgIcons"src={cssIcon}></img>  </div>
-</div>
+            <div><SectionP title1={title1} explenation={explenation} hero2={hero2} Background={Background} foodi={foodi} tests={tests} tests2={tests2} alfa={0} beta={1}></SectionP></div>
 
 
-
-<div  className="h3" style={{opacity:oks1}}>
-    <h2  style={{color:"white"}}> Recepie generator</h2>
-<p>•	Website based on NASA Climat-change information, I’m using API from various endpoints to show the worldwide temperature change over 130years, or air quality over 170 countries. </p>
-<div style={{width:" 70%"}}> <img src={reactIcon} className="imgIcons"></img> <img className="imgIcons" src={javaScriptIcon}></img>  
-<img className="imgIcons" src={bootstrapIcon}></img>  <img className="imgIcons" src={htmlIcon}></img> 
- <img className="imgIcons"src={cssIcon}></img>  </div>
-</div>
-
-
-
-
-
-
-</div></Fade>
-<img id="1" style={{opacity:uno}} className="first_img" src={tests} onMouseLeave={imgFunk2} onMouseEnter={imgFunk}></img>
-<img id="2" style={{opacity:due}}className="second_img" src={tests2} onMouseLeave={imgFunk4} onMouseEnter={imgFunk3}></img>
-
-
-
-            </div>
+            <div><SectionP specialC={specialC} title1={title1} explenation={explenation} hero2={templet1} Background={smile} foodi={razerB} tests={raz} tests2={inst} alfa={2} beta={3}></SectionP></div>
+   
         </div>
     )
 }
+
+//sectionP = > title of text , explenation => explenation of text , hero2 => first image that loads
+// Background => on mouseEnter 1 img change , foodi => on mouseEnter 2 img change
+// test and test2 => images of projects that get hovered over
+//alfa and beta represents the index of titles ect
 
 
 // <img style={{width:"3rem", marginRight:"1rem",backgroundColor:"white"}} src={github}></img>

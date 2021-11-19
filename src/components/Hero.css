@@ -1,8 +1,8 @@
 .show{position: absolute;
-width: 90%;
-margin-left: -45%;
-top: 31%;
-left: 50%;
+width: 98%;
+/* margin-left: -45%; */
+top: 21%;
+left: 1%;
 z-index: 1;
 font-family: 'Zen Kurenaido', sans-serif;
 font-size: 4rem;
@@ -240,7 +240,7 @@ position: relative;
           filter:saturate(100%) !important;
           width: 30%;
           height: 30vh;
-          transition: all 1s;
+          transition: opacity 1s;
           position: absolute;
           box-shadow: none;
           border-radius: 2rem;
