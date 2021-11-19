@@ -72,6 +72,7 @@ export default function Hero() {
     <img  className="nvv" src={img1}/>
 
             <div id="site-name" className="show">
+              <div className="myName">
             <span className="c1" style={{transitionDelay: 3400+"ms"}}>S</span>
                 <span className="c2" style={{transitionDelay: 400+"ms"}}>E</span>
                 <span className="c3" style={{transitionDelay: 466+"ms"}}>B</span>
@@ -85,6 +86,7 @@ export default function Hero() {
                 <span className="c11" style={{transitionDelay: 300+"ms"}}>E</span>
                 <span className="c12" style={{transitionDelay: 666+"ms"}}>W</span>
                 <span className="c13" style={{transitionDelay: 500+"ms"}}>Y</span>
+                </div>
                 <p className="c14">I'm aspiring junior web developer, lets start scrolling!</p>
                 {/* <Link className="scrolling" activeClass="active" to="section1" spy={true} smooth={true} duration={1000}>
          <img className="img2" src={tap}></img>
