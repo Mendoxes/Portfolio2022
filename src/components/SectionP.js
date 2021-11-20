@@ -12,9 +12,10 @@ import {Link} from "react-scroll"
 import tap from "../tap.png"
 
 
-export default function SectionP({specialC, title1, explenation,hero2,Background,foodi,tests,tests2,alfa,beta}) {
 
-    
+export default function SectionP({linkPage,specialC, stack, title1, explenation,hero2,Background,foodi,tests,tests2,alfa,beta}) {
+
+
     const [opa, setOpa]=useState(0)
     const [opa2, setOpa2]=useState(0)
     const [visi, setVisi]=useState(1)
@@ -99,34 +100,38 @@ return
            
 
 
-            <div  className="h2" style={{opacity:opa, margin:marg}}>
+            {!isMobile?<div  className="h2" style={{opacity:opa, margin:marg}}>
     <h2  style={{color:"white"}}>{title1[alfa]} </h2>
 <p >{explenation[alfa]} </p>
-<div style={{width:" 70%"}}> <SectionTemplet ok={[bootstrapIcon,htmlIcon,cssIcon,reactIcon,javaScriptIcon]}/> 
+<div style={{width:" 70%"}}> <SectionTemplet ok={stack[alfa]}/> 
 
 
  </div>
+</div>:null}
+
+
+
+
+<a href={linkPage[alfa]}><img style={{opacity:visi,width:hi}} className="first_img_SectionP" src={tests2}onMouseEnter={make1} onMouseLeave={make2} ></img></a>
+
+
+
 </div>
-
-
-
-
-           <img style={{opacity:visi,width:hi}} className="first_img_SectionP" src={tests2}onMouseEnter={make1} onMouseLeave={make2} ></img></div>
            <div className="ImageContainer_SectionP2" >
                
                
-           <div  className="h2" style={{opacity:opa2, margin:marg}}>
+           {!isMobile?<div  className="h2" style={{opacity:opa2,  margin:marg}}>
     <h2  style={{color:"white"}}> {title1[beta]}</h2>
 <p>{explenation[beta]}</p>
-<div style={{width:" 70%"}}>  <SectionTemplet ok={[bootstrapIcon,htmlIcon,cssIcon,reactIcon,javaScriptIcon]}/></div>
-</div>
+<div style={{width:" 70%"}}>  <SectionTemplet ok={stack[beta]}/></div>
+</div>:null}
                
                
                
                
                
                
-              <img style={{opacity:visi2,width:hi2}}className="first_img_SectionP" src={tests} onMouseEnter={make3} onMouseLeave={make4} ></img>
+<a href={linkPage[beta]}> <img  style={{opacity:visi2,width:hi2}}className="first_img_SectionP" src={tests} onMouseEnter={make3} onMouseLeave={make4} ></img></a>
                
                </div>
           

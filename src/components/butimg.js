@@ -25,7 +25,7 @@ export default function Butimg() {
       <ButComponent ima={disney} anim={disneyAnim}/>
            <Link to="section1" spy={true} smooth={true} duration={1000}> <ButComponent ima={projectImg} anim={projectAnim}/></Link>
              <ButComponent ima={githubImg} anim={githubAnim}/>
-             <ButComponent ima={bioImg} anim={bioAnim}/>
+            <a href={"about"}> <ButComponent ima={bioImg} anim={bioAnim}/></a>
              <ButComponent ima={contactImg} anim={contactAnim}/>
                
             </div>

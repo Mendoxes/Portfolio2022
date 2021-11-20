@@ -16,10 +16,11 @@
 .h2{
 background-color: rgba(0, 0, 0, 0.651);
   width:100%;
+  font-size: 1rem;
 }
 .Leyer_SectionP{
     position:absolute;
-    top:10%;
+    top:20%;
     left:50%;
     width: 100%;
     margin-left:-50%;
@@ -103,7 +104,7 @@ cursor: pointer;
 
   .Leyer_SectionP{
     flex-direction:column;
-    top: 20%;
+    top: -20%;
     left: 25%;
   }
    }
@@ -127,4 +128,20 @@ cursor: pointer;
   font-size: 3rem;
 }
 
+}
+
+@media only screen and (max-width:800px){
+
+  .Leyer_SectionP{
+    flex-direction: column;
+    margin: 0;
+    left: 37%;
+    top: 38%;
+  }
+
+  .special{
+    height: 86vh
+;
+  }
+   
 }
