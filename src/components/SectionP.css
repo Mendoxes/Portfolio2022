@@ -90,14 +90,16 @@ cursor: pointer;
 
   .ImageContainer_SectionP1{
     width: 66%;
-    margin-left: 42%;
+    margin-left: -19%;
+
   z-index: 10000;
 
   }
 
   .ImageContainer_SectionP2{
     width: 66%;
-    margin-left: 42%;
+    margin-left: -19%;
+
     z-index: 10000;
 
   }
