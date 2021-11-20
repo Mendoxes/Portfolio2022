@@ -118,7 +118,7 @@ img {
 
   @media only screen and (max-width: 500px) {
     .Plus > a, .Plus > div  {
-        margin: 86px  39px 37px 33%;
+        margin: 86px  39px -46px 33%;
             flex: 0 0 auto;
             width: 38%;
     }

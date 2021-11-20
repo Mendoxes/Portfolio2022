@@ -83,3 +83,25 @@ cursor: pointer;
   background-size: cover;
   filter: hue-rotate(309deg);
 }
+
+
+@media only screen and (max-width: 700px) {
+
+  .ImageContainer_SectionP1{
+    width: 100%;
+    margin-left: 25%;
+
+  }
+
+  .ImageContainer_SectionP2{
+    width: 100%;
+    margin-left: 25%;
+
+  }
+
+  .Leyer_SectionP{
+    flex-direction:column;
+    top: 20%;
+    left: 25%;
+  }
+   }
