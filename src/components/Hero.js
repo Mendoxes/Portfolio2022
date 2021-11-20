@@ -6,6 +6,10 @@ import tests from "../9.png"
 import tests2 from "../8.png"
 import raz from "../6.png"
 import inst from "../7.png"
+import sveltProject from "../5.png"
+import phpProject from "../10.png"
+import sveltImg from "../svelteProject.png"
+import phpImg from "../phpProject.png"
 import foodi from "../foodi.png"
 import hero2 from "../hero2.jpg"
 import razerB from "../razerB.png"
@@ -59,8 +63,8 @@ export default function Hero() {
       
       console.log([...pentagon.getSides()]);
 
-      const title1 = ["Climate change","Dish Search App","Instagram Clone","Razer Shop"] //data for titles 
-      const explenation =["•	Website based on NASA Climat-change information, I’m using API from various endpoints to show the worldwide temperature change over 130years, or air quality over 170 countries.","•	Website based on NASA Climat-change information, I’m using API from various endpoints to show the worldwide temperature change over 130years, or air quality over 170 countries. ","fjdksf", "fdhsfs"]
+      const title1 = ["Climate change","Dish Search App","Instagram Clone","Razer Shop","Svelte.js E-commerce","Php-react CRUD"] //data for titles 
+      const explenation =["•	Website based on NASA Climat-change information, I’m using API from various endpoints to show the worldwide temperature change over 130years, or air quality over 170 countries.", "Website that helps you find recipe for dish you like. You can filter your results by maximum KCAL intake.This project got API calls limit","•	A clone of one of the most popular social network application. It is connected to Firebase API and deployed on Vercel. With my clone you can register account, log in, add pictures with title, comment/like other people’s photos. ","•	Mock-up of e-commerce shop with a Commerce.js CMS so updating content does not require coding. Stack used for this project: 	JavaScript,React.js,Commerce.js,material.ui,CSS,HTML.", "•	Simple Mock-up of E-commerce shop application, it was done with Svelte.js.","basic CRUD application that connects react frontend and php/mysql backend, you can add/delete/ products, project has complete validation for products types and input ","fhsdjf"]
 
 
 
@@ -99,11 +103,15 @@ export default function Hero() {
            
 
 
-            <div><SectionP title1={title1} explenation={explenation} hero2={hero2} Background={Background} foodi={foodi} tests={tests} tests2={tests2} alfa={0} beta={1}></SectionP></div>
+        <Fade>    <div id="section1"><SectionP title1={title1} explenation={explenation} hero2={hero2} Background={Background} foodi={foodi} tests={tests} tests2={tests2} alfa={0} beta={1}>
+          
+          
+          </SectionP>
+          </div>
 
 
             <div><SectionP specialC={specialC} title1={title1} explenation={explenation} hero2={templet1} Background={smile} foodi={razerB} tests={raz} tests2={inst} alfa={2} beta={3}></SectionP></div>
-   
+            <div><SectionP specialC={specialC} title1={title1} explenation={explenation} hero2={templet1} Background={sveltImg} foodi={phpImg} tests={phpProject} tests2={sveltProject} alfa={4} beta={5}></SectionP></div></Fade>
         </div>
     )
 }

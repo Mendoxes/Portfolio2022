@@ -333,5 +333,13 @@ position: relative;
              }
 
 
+             @media only screen and (min-width:2000px){
+               .myName{
+                 font-size: 7rem;
+               }
+               .c14{
+                 font-size: 3rem;
+               }
+              }
 
     

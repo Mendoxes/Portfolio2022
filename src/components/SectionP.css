@@ -81,11 +81,11 @@ cursor: pointer;
   height: 100vh;
   transition: background-image 0.5s;
   background-size: cover;
-  filter: hue-rotate(309deg);
+  /* filter: hue-rotate(309deg); */
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 500px) {
 
   .ImageContainer_SectionP1{
     width: 66%;
@@ -97,6 +97,7 @@ cursor: pointer;
   .ImageContainer_SectionP2{
     width: 66%;
     margin-left: 42%;
+    z-index: 10000;
 
   }
 
@@ -106,3 +107,24 @@ cursor: pointer;
     left: 25%;
   }
    }
+
+
+@media only screen and (min-width:2000px){
+
+  .Background_SectionP{
+    height: 50vh;
+  }
+  .special{
+    height: 50vh;
+  }
+
+.first_img_SectionP{
+  height: 17vh
+;
+
+}
+.h2{
+  font-size: 3rem;
+}
+
+}

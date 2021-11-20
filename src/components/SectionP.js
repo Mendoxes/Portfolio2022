@@ -8,6 +8,8 @@ import cssIcon from "../css.png"
 import javaScriptIcon from "../javascript.png"
 import {useState} from "react"
 import { useMediaQuery } from 'react-responsive'
+import {Link} from "react-scroll"
+import tap from "../tap.png"
 
 
 export default function SectionP({specialC, title1, explenation,hero2,Background,foodi,tests,tests2,alfa,beta}) {
@@ -21,7 +23,7 @@ export default function SectionP({specialC, title1, explenation,hero2,Background
 const [hi,setHi]=useState("100%")
 const [hi2,setHi2]=useState("100%")
 const [marg,setMarg]=useState("2% 10%")
-const isMobile = useMediaQuery({ query: '(max-width: 700px)' })
+const isMobile = useMediaQuery({ query: '(max-width: 800px)' })
     let sectionStyle ={
     
         backgroundImage: `url(${imgChange})`,
@@ -100,7 +102,10 @@ return
             <div  className="h2" style={{opacity:opa, margin:marg}}>
     <h2  style={{color:"white"}}>{title1[alfa]} </h2>
 <p >{explenation[alfa]} </p>
-<div style={{width:" 70%"}}> <SectionTemplet ok={[bootstrapIcon,htmlIcon,cssIcon,reactIcon,javaScriptIcon]}/>  </div>
+<div style={{width:" 70%"}}> <SectionTemplet ok={[bootstrapIcon,htmlIcon,cssIcon,reactIcon,javaScriptIcon]}/> 
+
+
+ </div>
 </div>
 
 

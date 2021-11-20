@@ -12,15 +12,18 @@ import contactImg from "./images/contact.png"
 import contactAnim from "./images/contact.gif"
 import ButComponent  from './ButComponent'
 import Fade from 'react-reveal/Fade';
+import {Link} from "react-scroll"
 export default function Butimg() {
 
-
+    // <Link className="scrolling" activeClass="active" to="section1" spy={true} smooth={true} duration={1000}>
+    //      <img className="img2" src={tap}></img>
+    //     </Link>
     return (
         <div>
        <Fade delay={2900}> <div className="container">
             <div className="Plus">
       <ButComponent ima={disney} anim={disneyAnim}/>
-            <ButComponent ima={projectImg} anim={projectAnim}/>
+           <Link to="section1" spy={true} smooth={true} duration={1000}> <ButComponent ima={projectImg} anim={projectAnim}/></Link>
              <ButComponent ima={githubImg} anim={githubAnim}/>
              <ButComponent ima={bioImg} anim={bioAnim}/>
              <ButComponent ima={contactImg} anim={contactAnim}/>

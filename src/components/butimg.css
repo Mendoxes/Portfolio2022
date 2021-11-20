@@ -123,3 +123,14 @@ img {
             width: 38%;
     }
   }
+
+
+
+  @media only screen and (min-width:2000px){
+
+ .Plus{
+    flex-direction: column;
+    /* flex-flow: row wrap; */
+    margin: 94px -22px 45px 3%;
+ }
+  }
