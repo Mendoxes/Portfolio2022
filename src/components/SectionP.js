@@ -99,7 +99,7 @@ return
 
             <div  className="h2" style={{opacity:opa, margin:marg}}>
     <h2  style={{color:"white"}}>{title1[alfa]} </h2>
-<p>{explenation[alfa]} </p>
+<p className="nameMes">{explenation[alfa]} </p>
 <div style={{width:" 70%"}}> <SectionTemplet ok={[bootstrapIcon,htmlIcon,cssIcon,reactIcon,javaScriptIcon]}/>  </div>
 </div>
 
