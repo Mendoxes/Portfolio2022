@@ -21,7 +21,7 @@ export default function SectionP({specialC, title1, explenation,hero2,Background
 const [hi,setHi]=useState("100%")
 const [hi2,setHi2]=useState("100%")
 const [marg,setMarg]=useState("2% 10%")
-const isMobile = useMediaQuery({ query: '(max-width: 1000px)' })
+const isMobile = useMediaQuery({ query: '(max-width: 700px)' })
     let sectionStyle ={
     
         backgroundImage: `url(${imgChange})`,
@@ -93,13 +93,13 @@ return
             
             <div className="Leyer_SectionP"> 
             
-            <div className="ImageContainer_SectionP1" >
+            <div className="ImageContainer_SectionP1" onMouseEnter={make1} onMouseLeave={make2}>
            
 
 
             <div  className="h2" style={{opacity:opa, margin:marg}}>
     <h2  style={{color:"white"}}>{title1[alfa]} </h2>
-<p className="nameMes">{explenation[alfa]} </p>
+<p >{explenation[alfa]} </p>
 <div style={{width:" 70%"}}> <SectionTemplet ok={[bootstrapIcon,htmlIcon,cssIcon,reactIcon,javaScriptIcon]}/>  </div>
 </div>
 
@@ -107,7 +107,7 @@ return
 
 
            <img style={{opacity:visi,width:hi}} className="first_img_SectionP" src={tests2}onMouseEnter={make1} onMouseLeave={make2} ></img></div>
-           <div className="ImageContainer_SectionP2" onMouseEnter={make3} onMouseLeave={make4}>
+           <div className="ImageContainer_SectionP2" >
                
                
            <div  className="h2" style={{opacity:opa2, margin:marg}}>
