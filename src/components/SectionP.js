@@ -33,7 +33,7 @@ const isMobile = useMediaQuery({ query: '(max-width: 700px)' })
         setOpa(1)
         setVisi2(0)
         !isMobile?setHi("130%"):setHi("100%");
-        setImgChange(Background)
+        !isMobile?setImgChange(Background):setImgChange(hero2);
         isMobile?setMarg("0% 0%"):setMarg("2% 10%")
     }
     function make2(){
@@ -41,20 +41,20 @@ const isMobile = useMediaQuery({ query: '(max-width: 700px)' })
         setOpa(0)
         setHi("100%")
         setVisi2(1)
-        setImgChange(hero2)
+        !isMobile?setImgChange(hero2):setImgChange(hero2);
     }
 
 
     function make3(){
         !isMobile?setHi2("130%"):setHi2("100%");
-        setImgChange(foodi)
+        !isMobile?setImgChange(foodi):setImgChange(hero2)
         setOpa2(1)
         setVisi(0)
         isMobile?setMarg("0% 0%"):setMarg("2% 10%")
     }
     function make4(){
         setHi2("100%")
-        setImgChange(hero2)
+        !isMobile?setImgChange(hero2):setImgChange(hero2)
         setOpa2(0)
         setVisi(1)
     }
