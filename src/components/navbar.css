@@ -1,0 +1,21 @@
+.logo{
+  
+        bottom: 0px;
+        display: block;
+        /* height: 100%; */
+        left: 0px;
+        object-fit: cover;
+        opacity: 1;
+        position: absolute;
+        right: 0px;
+        top: -27px;
+        width: 100%;
+        transition: opacity 500ms ease-in-out 0s;
+    }
+
+
+
+    .logo-cont{
+
+        padding-top: 56.25%;
+    }

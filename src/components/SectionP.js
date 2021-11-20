@@ -103,7 +103,7 @@ return
             {!isMobile?<div  className="h2" style={{opacity:opa, margin:marg}}>
     <h2  style={{color:"white"}}>{title1[alfa]} </h2>
 <p >{explenation[alfa]} </p>
-<div style={{width:" 70%"}}> <SectionTemplet ok={stack[alfa]}/> 
+<div style={{width:" 80%"}}> <SectionTemplet ok={stack[alfa]}/> 
 
 
  </div>
@@ -123,7 +123,7 @@ return
            {!isMobile?<div  className="h2" style={{opacity:opa2,  margin:marg}}>
     <h2  style={{color:"white"}}> {title1[beta]}</h2>
 <p>{explenation[beta]}</p>
-<div style={{width:" 70%"}}>  <SectionTemplet ok={stack[beta]}/></div>
+<div style={{width:" 80%"}}>  <SectionTemplet ok={stack[beta]}/></div>
 </div>:null}
                
                

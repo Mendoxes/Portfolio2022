@@ -44,8 +44,8 @@ export default function Hero() {
  ,[bootstrapIcon,htmlIcon,cssIcon,reactIcon,javaScriptIcon]
  ,[bootstrapIcon,htmlIcon,cssIcon,reactIcon,javaScriptIcon]
  ,[bootstrapIcon,htmlIcon,cssIcon,reactIcon,javaScriptIcon]
- ,[htmlIcon,cssIcon,svelteIcon,javaScriptIcon]
- ,[cssIcon,reactIcon,javaScriptIcon,phpIcon,mysqlIcon]]
+ ,[htmlIcon,cssIcon,svelteIcon,javaScriptIcon,cssIcon]
+ ,[reactIcon,javaScriptIcon,phpIcon,mysqlIcon,cssIcon]]
   
  let specialC = "special";
 
@@ -72,7 +72,7 @@ export default function Hero() {
       console.log([...pentagon.getSides()]);
 
       const title1 = ["Climate change","Dish Search App","Instagram Clone","Razer Shop","Svelte.js E-commerce","Php-react CRUD"] //data for titles 
-      const explenation =["•	Website based on NASA Climat-change information, I’m using API from various endpoints to show the worldwide temperature change over 130years, or air quality over 170 countries.", "Website that helps you find recipe for dish you like. You can filter your results by maximum KCAL intake.This project got API calls limit","•	A clone of one of the most popular social network application. It is connected to Firebase API and deployed on Vercel. With my clone you can register account, log in, add pictures with title, comment/like other people’s photos. ","•	Mock-up of e-commerce shop with a Commerce.js CMS so updating content does not require coding. Stack used for this project: 	JavaScript,React.js,Commerce.js,material.ui,CSS,HTML.", "•	Simple Mock-up of E-commerce shop application, it was done with Svelte.js.","basic CRUD application that connects react frontend and php/mysql backend, you can add/delete/ products, project has complete validation for products types and input ","fhsdjf"]
+      const explenation =["•	Website based on NASA Climat-change information, I’m using API from various endpoints to show the worldwide temperature change over 130years, or air quality over 170 countries.", "Website that helps you find recipe for dish you like. You can filter your results by maximum KCAL intake.This project got API calls limit","•	A clone of one of the most popular social network application. It is connected to Firebase API and deployed on Vercel. With my clone you can register account, log in, add pictures with title, comment/like other people’s photos. ","•	Mock-up of e-commerce shop with a Commerce.js CMS so updating content does not require coding. Stack used for this project: 	JavaScript,React.js,Commerce.js,material.ui,CSS,HTML.", "•	Simple Mock-up of E-commerce shop application, it was done with Svelte.js.","basic CRUD application that connects react frontend and php/mysql backend, you can add/delete/ products"]
       const linkPage =["https://climat-change.vercel.app/","https://food-sepia.vercel.app/","https://insta-steel.vercel.app/login ","https://razer-shop.vercel.app/","https://mendoxes.github.io/Clothes/","https://php-list.vercel.app/"]
 
 
