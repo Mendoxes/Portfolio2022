@@ -7,7 +7,7 @@ import htmlIcon from "../html.png"
 import cssIcon from "../css.png"
 import javaScriptIcon from "../javascript.png"
 import {useState} from "react"
-
+import { useMediaQuery } from 'react-responsive'
 
 
 export default function SectionP({specialC, title1, explenation,hero2,Background,foodi,tests,tests2,alfa,beta}) {
@@ -20,6 +20,8 @@ export default function SectionP({specialC, title1, explenation,hero2,Background
     const [imgChange, setImgChange]=useState(hero2) //main image 
 const [hi,setHi]=useState("100%")
 const [hi2,setHi2]=useState("100%")
+const [marg,setMarg]=useState("2% 10%")
+const isMobile = useMediaQuery({ query: '(max-width: 1000px)' })
     let sectionStyle ={
     
         backgroundImage: `url(${imgChange})`,
@@ -30,8 +32,9 @@ const [hi2,setHi2]=useState("100%")
 
         setOpa(1)
         setVisi2(0)
-      setHi("130%")
+        !isMobile?setHi("130%"):setHi("100%");
         setImgChange(Background)
+        isMobile?setMarg("0% 0%"):setMarg("2% 10%")
     }
     function make2(){
 
@@ -43,10 +46,11 @@ const [hi2,setHi2]=useState("100%")
 
 
     function make3(){
-        setHi2("130%")
+        !isMobile?setHi2("130%"):setHi2("100%");
         setImgChange(foodi)
         setOpa2(1)
         setVisi(0)
+        isMobile?setMarg("0% 0%"):setMarg("2% 10%")
     }
     function make4(){
         setHi2("100%")
@@ -93,7 +97,7 @@ return
            
 
 
-            <div  className="h2" style={{opacity:opa}}>
+            <div  className="h2" style={{opacity:opa, margin:marg}}>
     <h2  style={{color:"white"}}>{title1[alfa]} </h2>
 <p>{explenation[alfa]} </p>
 <div style={{width:" 70%"}}> <SectionTemplet ok={[bootstrapIcon,htmlIcon,cssIcon,reactIcon,javaScriptIcon]}/>  </div>
@@ -106,7 +110,7 @@ return
            <div className="ImageContainer_SectionP2" onMouseEnter={make3} onMouseLeave={make4}>
                
                
-           <div  className="h2" style={{opacity:opa2}}>
+           <div  className="h2" style={{opacity:opa2, margin:marg}}>
     <h2  style={{color:"white"}}> {title1[beta]}</h2>
 <p>{explenation[beta]}</p>
 <div style={{width:" 70%"}}>  <SectionTemplet ok={[bootstrapIcon,htmlIcon,cssIcon,reactIcon,javaScriptIcon]}/></div>
