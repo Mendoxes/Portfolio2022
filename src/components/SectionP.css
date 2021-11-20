@@ -138,11 +138,16 @@ cursor: pointer;
     flex-direction: column;
     margin: 0;
     left: 37%;
-    top: 38%;
+    top: 4%;
   }
 
   .special{
-    height: 86vh
+    height: 59vh
+;
+  }
+
+  .Background_SectionP{
+    height: 62vh
 ;
   }
    

@@ -24,9 +24,9 @@ export default function Butimg() {
             <div className="Plus">
       <ButComponent ima={disney} anim={disneyAnim}/>
            <Link to="section1" spy={true} smooth={true} duration={1000}> <ButComponent ima={projectImg} anim={projectAnim}/></Link>
-             <ButComponent ima={githubImg} anim={githubAnim}/>
+             <a href={"https://github.com/Mendoxes?tab=repositories"}><ButComponent ima={githubImg} anim={githubAnim}/></a>
             <a href={"about"}> <ButComponent ima={bioImg} anim={bioAnim}/></a>
-             <ButComponent ima={contactImg} anim={contactAnim}/>
+            <a href="mailto:starke.phan@gmail.com"> <ButComponent ima={contactImg} anim={contactAnim}/></a>
                
             </div>
         </div></Fade>
