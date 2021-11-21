@@ -18,6 +18,10 @@ padding:"4rem",
 backgroundColor:"#1a1d29;"
 
 }
+
+const sourseC =["https://mendoxes.github.io/starter/","https://mendoxes.github.io/Maja-Bizior/","https://mendoxes.github.io/Portfolio/","https://mendoxes.github.io/Sewingpassion/"]
+
+
     const inside =["This website is one of the first i did `seriously`","Simple photo-galery website created for a friend","my old portfolio created back in 2020","Hobby project showing than sawing can be a real passion"]
     return (
        <Fade delay={200}> <div style={{height:"100vh" ,padding:"2rem"}}>
@@ -25,7 +29,7 @@ backgroundColor:"#1a1d29;"
   {Array.from({ length: 4 }).map((_, idx) => (
     <Col>
       <Card>
-        <Card.Img variant="top" src={ok[idx]} />
+      <a href={sourseC[idx]}> <Card.Img variant="top" src={ok[idx]} /></a>
         <Card.Body>
           <Card.Title>{title[idx]}</Card.Title>
           <Card.Text>

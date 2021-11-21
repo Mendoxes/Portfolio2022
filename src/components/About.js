@@ -10,6 +10,7 @@ import trains from "./images/trains.jpg"
 import production from "./images/production.jpg"
 import coffie from "./images/coffie.jpg"
 import warehouse from "./images/warehouse.jpg"
+import {Button} from "react-bootstrap"
 export default function About() {
 
 
@@ -21,6 +22,13 @@ margin:"10rem auto",
 border:"solid 2px white"
     }
 
+    const stylish={
+        margin:"0 auto",
+        width:"30%",
+        padding:"4rem",
+        backgroundColor:"#1a1d29;"
+        
+        }
 
     const mainBar={
 display:"flex",
@@ -178,6 +186,8 @@ justifyContent: "space-around"
 
 
 
+
+<div style={stylish}><a href={"/"}><Button size="lg" variant="dark">Back to home</Button></a></div>
                             
 
           
