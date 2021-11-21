@@ -91,9 +91,8 @@ return
         
         <div  style={{marginTop:"-7px"}}className="main_SectionP">
             
-            {specialC?<div className="Background_SectionP " className={specialC} style={sectionStyle}></div>:
-            <div className="Background_SectionP " style={sectionStyle}></div>}
-            
+            {specialC?<div className="Background_SectionP " className={specialC} style={sectionStyle}>
+
             <div className="Leyer_SectionP"> 
             
             <div className="ImageContainer_SectionP1" onMouseEnter={make1} onMouseLeave={make2}>
@@ -136,6 +135,53 @@ return
                </div>
           
             </div>
+
+
+            </div>:
+            <div className="Background_SectionP " style={sectionStyle}>  <div className="Leyer_SectionP"> 
+            
+            <div className="ImageContainer_SectionP1" onMouseEnter={make1} onMouseLeave={make2}>
+           
+
+
+            {!isMobile?<div  className="h2" style={{opacity:opa, margin:marg}}>
+    <h2  style={{color:"white"}}>{title1[alfa]} </h2>
+<p >{explenation[alfa]} </p>
+<div style={{width:" 80%"}}> <SectionTemplet ok={stack[alfa]}/> 
+
+
+ </div>
+</div>:null}
+
+
+
+
+<a href={linkPage[alfa]}><img style={{opacity:visi,width:hi}} className="first_img_SectionP" src={tests2}onMouseEnter={make1} onMouseLeave={make2} ></img></a>
+
+
+
+</div>
+           <div className="ImageContainer_SectionP2" >
+               
+               
+           {!isMobile?<div  className="h2" style={{opacity:opa2,  margin:marg}}>
+    <h2  style={{color:"white"}}> {title1[beta]}</h2>
+<p>{explenation[beta]}</p>
+<div style={{width:" 80%"}}>  <SectionTemplet ok={stack[beta]}/></div>
+</div>:null}
+               
+               
+               
+               
+               
+               
+<a href={linkPage[beta]}> <img  style={{opacity:visi2,width:hi2}}className="first_img_SectionP" src={tests} onMouseEnter={make3} onMouseLeave={make4} ></img></a>
+               
+               </div>
+          
+            </div></div>}
+            
+          
            
         </div>
     )

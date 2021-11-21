@@ -19,11 +19,11 @@ background-color: rgba(0, 0, 0, 0.651);
   font-size: 0.6rem;
 }
 .Leyer_SectionP{
-    position:absolute;
+    /* position:absolute;
     top:8%;
     left:50%;
     width: 100%;
-    margin-left:-50%;
+    margin-left:-50%; */
     display:flex;
     justify-content: space-evenly;
     
@@ -31,7 +31,7 @@ background-color: rgba(0, 0, 0, 0.651);
 
 .main_SectionP{
     transition: all 1s;
-    position: relative;
+    /* position: relative; */
 }
 
 .Leyer_SectionP{
@@ -89,16 +89,16 @@ cursor: pointer;
 @media only screen and (max-width: 500px) {
 
   .ImageContainer_SectionP1{
-    width: 66%;
-    margin-left: -19%;
+    width: 45%;
+    margin: 0 auto;
 
   z-index: 10000;
 
   }
 
   .ImageContainer_SectionP2{
-    width: 66%;
-    margin-left: -19%;
+    width: 45%;
+    margin: 0 auto;
 
     z-index: 10000;
 
@@ -106,8 +106,7 @@ cursor: pointer;
 
   .Leyer_SectionP{
     flex-direction:column;
-    top: -20%;
-    left: 25%;
+   padding-top:2rem;
   }
    }
 
@@ -135,10 +134,8 @@ cursor: pointer;
 @media only screen and (max-width:800px){
 
   .Leyer_SectionP{
-    flex-direction: column;
-    margin: 0;
-    left: 37%;
-    top: 4%;
+    padding-top: 4rem
+    ;
   }
 
   .special{
