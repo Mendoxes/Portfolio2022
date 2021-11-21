@@ -111,14 +111,18 @@ export default function Hero() {
            
 
 
-        <Fade>    <div id="section1"><SectionP stack={stack} linkPage={linkPage} title1={title1} explenation={explenation} hero2={hero2} Background={Background} foodi={foodi} tests={tests} tests2={tests2} alfa={0} beta={1}>
+        <Fade>   
+          
+        
+           <div id="section1"><SectionP stack={stack} linkPage={linkPage} title1={title1} explenation={explenation} hero2={hero2} Background={Background} foodi={foodi} tests={tests} tests2={tests2} alfa={0} beta={1}>
           
           
           </SectionP>
           </div>
+          <div style={{border:"solid 2px white",margin:"1rem"}}><h1 style={{padding:"2rem"}}> React projects</h1>
 
-
-            <div><SectionP stack={stack} linkPage={linkPage} specialC={specialC} title1={title1} explenation={explenation} hero2={templet1} Background={smile} foodi={razerB} tests={raz} tests2={inst} alfa={2} beta={3}></SectionP></div>
+ </div>           <div><SectionP stack={stack} linkPage={linkPage} specialC={specialC} title1={title1} explenation={explenation} hero2={templet1} Background={smile} foodi={razerB} tests={raz} tests2={inst} alfa={2} beta={3}></SectionP></div>
+            <div style={{border:"solid 2px white",margin:"1rem"}}><h1 style={{padding:"2rem"}}>PHP/Svelte.js projects</h1></div>
             <div><SectionP stack={stack} linkPage={linkPage} specialC={specialC} title1={title1} explenation={explenation} hero2={templet1} Background={sveltImg} foodi={phpImg} tests={phpProject} tests2={sveltProject} alfa={4} beta={5}></SectionP></div></Fade>
         </div>
     )

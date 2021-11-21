@@ -3,6 +3,7 @@ import './App.css';
 import Hero from "./components/Hero.js"
 import  { lazy, Suspense } from "react";
 import About from "./components/About.js"
+import Archive from "./components/archive.js"
 
 import {
   BrowserRouter,
@@ -25,6 +26,7 @@ function App() {
 
       </Route>
       <Route path="about" element={<About />}></Route>
+      <Route path="archive" element={<Archive />}></Route>
     </Routes>
   </BrowserRouter>
 
