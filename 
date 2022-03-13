@@ -1,0 +1,96 @@
+[33mcommit 7c4b10e6404d58b1fe42b74d8c9a0f20d0923860[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Sebastian <seba.lewy@op.pl>
+Date:   Sat Nov 20 17:44:25 2021 +0000
+
+    mq
+
+ src/components/SectionP.css | 6 [32m++++[m[31m--[m
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+[33mcommit 9198adf54990977ceb1ce81d298deb768511a49c[m
+Author: Sebastian <seba.lewy@op.pl>
+Date:   Sat Nov 20 17:42:18 2021 +0000
+
+    About
+
+ package-lock.json           | 548 [32m++++++++++++++++++++++++++++++++++++++++++++[m
+ package.json                |   3 [32m+[m
+ public/index.html           |  10 [32m+[m[31m-[m
+ src/App.js                  |  25 [32m+[m[31m-[m
+ src/components/About.js     |  11 [32m+[m
+ src/components/Hero.js      |  18 [32m+[m[31m-[m
+ src/components/NavBar.js    |  23 [32m++[m
+ src/components/SectionP.css |  21 [32m+[m[31m-[m
+ src/components/SectionP.js  |  25 [32m+[m[31m-[m
+ src/components/butimg.css   |   9 [32m+[m[31m-[m
+ src/components/butimg.js    |   2 [32m+[m[31m-[m
+ src/mysql.png               | Bin [31m0[m -> [32m33690[m bytes
+ src/php.png                 | Bin [31m0[m -> [32m32172[m bytes
+ src/svelte.png              | Bin [31m0[m -> [32m107635[m bytes
+ 14 files changed, 673 insertions(+), 22 deletions(-)
+
+[33mcommit 26521e51d86e24b95e30fa3c6f3964757f104b23[m
+Author: Sebastian <seba.lewy@op.pl>
+Date:   Sat Nov 20 15:08:28 2021 +0000
+
+    mq
+
+ src/10.png                  | Bin [31m0[m -> [32m42427[m bytes
+ src/components/Hero.css     |   8 [32m++++++++[m
+ src/components/Hero.js      |  16 [32m++++++++++++[m[31m----[m
+ src/components/SectionP.css |  26 [32m++++++++++++++++++++++++[m[31m--[m
+ src/components/SectionP.js  |   9 [32m+++++++[m[31m--[m
+ src/components/butimg.css   |  11 [32m+++++++++++[m
+ src/components/butimg.js    |   7 [32m+++++[m[31m--[m
+ src/phpProject.png          | Bin [31m0[m -> [32m295543[m bytes
+ src/svelteProject.png       | Bin [31m0[m -> [32m578302[m bytes
+ 9 files changed, 67 insertions(+), 10 deletions(-)
+
+[33mcommit da65dd496f2f52834c9fe32d2d4d8c4baf2664ef[m
+Author: Sebastian <seba.lewy@op.pl>
+Date:   Sat Nov 20 12:04:38 2021 +0000
+
+    mq
+
+ src/components/SectionP.js | 8 [32m++++[m[31m----[m
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+[33mcommit c4db44878380b0e3da62060d5bd963fb4dafc12b[m
+Author: Sebastian <seba.lewy@op.pl>
+Date:   Sat Nov 20 11:56:36 2021 +0000
+
+    sd
+
+ src/components/SectionP.css | 3 [32m++[m[31m-[m
+ src/components/SectionP.js  | 8 [32m++++[m[31m----[m
+ 2 files changed, 6 insertions(+), 5 deletions(-)
+
+[33mcommit d1c8f737201eeac44d0b3d9b149e8b1106232fe8[m
+Author: Sebastian <seba.lewy@op.pl>
+Date:   Sat Nov 20 11:37:39 2021 +0000
+
+    ds
+
+ src/components/SectionP.js | 2 [32m+[m[31m-[m
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+[33mcommit 6b74617f1c8980d48af2d4945a8455e419b8297b[m
+Author: Sebastian <seba.lewy@op.pl>
+Date:   Sat Nov 20 11:35:31 2021 +0000
+
+    packagr
+
+ package-lock.json | 75 [32m+++++++++++++++++++++++++++++++++++++++++++++++++++++++[m
+ package.json      |  1 [32m+[m
+ 2 files changed, 76 insertions(+)
+
+[33mcommit 22b6a9a979f2c22dd71a1fcf55675551dc9afdbf[m
+Author: Sebastian <seba.lewy@op.pl>
+Date:   Sat Nov 20 11:33:18 2021 +0000
+
+    mq
+
+ src/9.gif                   | Bin [31m0[m -> [32m1448128[m bytes
+ src/components/SectionP.css |  10 [32m+++++[m[31m-----[m
+ src/components/SectionP.js  |  14 [32m+++++++++[m[31m-----[m
+ 3 files changed, 14 insertions(+), 10 deletions(-)
